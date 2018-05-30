@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<!-- remove next line if your web server adds charset-->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="styles/global/style/layout.css" type="text/css" media="all" />
+<link rel="stylesheet" type="text/css" href="styles/global/style/research.css" />
+<link rel="Shortcut Icon" href="./logo.ico" /> 
+<title>Stojan Trajanovski</title><meta name="description" content="Stojan Trajanovski" />
+<meta name="keywords" content="Stojan Trajanovski" />
+</head>
+<body class="one-col">
+<div id="site-search">  
+</div>
+</div>
+<div id="dept-title">
+<h1><a href="index.htm">Stojan Trajanovski</a></h1>
+</div>
+<div id="container"> <a name="skip-content" id="skip-content"></a>
+    <ul id="nav-tabbed">
+      <li class="active"><a href="index.htm">Info</a></li>
+      <li class="active"><a href="pubedu.htm">Publications</a></li>
+      <li class="active"><a href="eduawards.htm">Education & Awards</a></li>
+      <li class="selected"><a href="misc.htm">Miscellanea</a></li>
+  </ul>
+  <div id="content">
+    <div id="sub-brand">
+    </div>
+  <div id="content-primary">
+
+
+<h2 class="pub">Macedonian cyrillic support for LaTeX Babel</h2>
+<p>I have contributed to the <a target="_blank" href="https://www.ctan.org"><font color="#00A6D6">Comprehensive TeX Archive Network (CTAN)</font></a> with Macedonian cyrillic support for <a target="_blank" href="https://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib"><font color="#00A6D6">LaTeX babel</font></a>.<p/>
+
+
+<h3 class="pub">Download</h3>
+
+<p>It can be downloaded from [<a target="_blank" href="https://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/macedonian"><font color="#00A6D6">CTAN</font></a>].<br class = "half"/><p/>
+
+
+<p>A bigger size version (containing a working .tex example file)
+is given in the .zip file: [<a href="babel-macedonian/macedonian.zip"><font color="#00A6D6">macedonian.zip</font></a>] (3.1MB).</p>
+
+<p>This bigger size version is also available on [<a target="_blank" href="https://github.com/tstojan/babel-macedonian"><font color="#00A6D6">Github</font></a>].</p>
+
+<h3 class="pub">Installation</h3>
+
+<p>Just copy the file <span class="heading">macedonian.ldf</span>, where (a) your .tex document is stored; or (b) in your LaTeX distribution babel folder.<p/>
+
+<p>If you want to modify something:
+<ol>
+<li>
+First, compile the modified file: <span class="heading">macedonian.dtx</span> using pdfLatex.<br/> The output will be a documentation and implementation file: [<a target="_blank" href="babel-macedonian/macedonian.pdf"><font color="#00A6D6">macedonian.pdf</font></a>].</li>
+<li>
+Then, compile the file: <span class="heading">macedonian.ins</span> using pdfLatex. A file named <span class="heading">macedonian.ldf</span> will be created.</li>
+<li>
+Copy the file <span class="heading">macedonian.ldf</span>, where your .tex document is stored or in your LaTeX distribution babel folder.</li>
+</ol>
+
+
+<h3 class="pub">Usage</h3>
+
+<p>You have to use unicode-compliant text editor. You also have to save your file in utf-8x encoding.</p>
+
+<p>Add the following two lines somewhere at the beginning of your .tex document:</p>
+
+<p><font color="#808080">\usepackage[utf8x]{inputenc}</font></p>
+
+<p><font color="#808080">\usepackage[macedonian]{babel}</font></p>
+
+<p>Set the keyboard layout to Macedonian cyrillic, after you type: <font color="#808080">\selectlanguage{macedonian}</font>. Happy TeXing in Macedonian!</p>
+
+<p>A .pdf of the working example is given here [<a target="_blank" href="babel-macedonian/usage-example.pdf"><font color="#00A6D6">usage-example.pdf</font></a>], while the .tex source is given in [<a href="babel-macedonian/macedonian.zip"><font color="#00A6D6">macedonian.zip</font></a> folder: /usage-example].
+</p>
+
+<h3 class="pub">Specifics and differences from similar packages</h3>
+<p>Macedonian has similarities to both <a target="_blank" href="https://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/bulgarian"><font color="#00A6D6">Bulgarian</font></a> and <a target="_blank" href="https://www.ctan.org/tex-archive/macros/latex/contrib/babel-contrib/serbianc"><font color="#00A6D6">Serbian Cyrillic</font></a>. These implementations were used as starting points. However, there are some differences. These are the most important specifics (i.e. similarities and differences) implemented in this class:
+<ol>
+<li>
+The alphabet is complete and is in a correct order, so the numbering (enumerate option) will be in a correct way in Macedonian.
+</li>
+<li>
+Some <em>italic</em> letters in Macedonian, like: b (б),d (д), g (г), t (т), p (п) differ from Bulgarian (and Russian). These characters in italic are perhaps similar to Serbian Cyrillic. Moreover, the character gje (ѓ) "g with accent" is unique and does not appear in both Bulgarian and Serbian.</li>
+<li>
+The first paragraph of each section is indented.
+</li>
+<li>
+The date format is according to the Macedonian practice. (e.g., [dd] [month in Macedonian] [yyyy] год.)
+</li>
+<li>
+All the terms like chapter, bibliography, index, figure, table, theorem, months names, math functions (e.g., trigonometric) are all adjusted according to the Macedonian practice in books and other materials.
+</li>
+</ol>
+</p>
+<h3 class="pub">History, versions and fixes</h3>
+<p><span class="heading">[v1.0: 05.11.2015]:</span> Initial working version. <span class="heading">ba­bel-mace­do­nian</span> is on CTAN.</p>
+<p><span class="heading">[v1.1: 04.02.2016] - current:</span> The month names are now in accordance with the Macedonian orthography i.e. a month starts with a non-capital letter (thanks to Dario Gjorgjevski).</p>
+
+
+
+
+
+</div>
+<!-- content end -->
+</div>
+  <ul id="site-info">
+    <li class="copy"><!--&copy; -->Stojan Trajanovski, 2016<br />
+    </li>
+  </ul>
+</div><!-- end div=container -->
+</body></html>
